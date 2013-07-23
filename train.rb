@@ -26,4 +26,10 @@ class Train
     else
       'diesel'
   end
+
+  def distance_by_duration(speed, time)
+    @speed * time
+  end 
+  
+  end
 end
