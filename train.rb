@@ -16,9 +16,9 @@ class Train
   #
   # Returns the Integer time of the trip.
   def trip_duration(distance)
-    distance * speed
+    distance / @speed
   end
-end
+  end
   # Returns the String type of power for this train.
   def power_source
     if @model.include?('-A')
@@ -26,5 +26,4 @@ end
     else
       'diesel'
   end
-end
 end
