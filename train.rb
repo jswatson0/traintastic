@@ -27,7 +27,7 @@ class Train
       'diesel'
   end
   # this should give us distance by duration
-  def distance_by_duration(speed, time)
+  def distance_by_duration(time)
     @speed * time
   end 
   
