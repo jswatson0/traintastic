@@ -18,12 +18,19 @@ class Train
   def trip_duration(distance)
     distance / @speed
   end
-  end
+ 
   # Returns the String type of power for this train.
+  
   def power_source
     if @model.include?('-A')
       'steam'
     else
       'diesel'
   end
+  
+  # this should give us distance by duration
+  def distance_by_duration(time)
+    @speed * time
+  end
+end
 end
